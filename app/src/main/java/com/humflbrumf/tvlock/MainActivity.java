@@ -1,4 +1,4 @@
-package de.humflbrumf.tvlock;
+package com.humflbrumf.tvlock;
 
 import android.R.color;
 import android.app.Activity;
@@ -14,8 +14,6 @@ import android.view.KeyEvent;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.humflbrumf.tvlock.R;
 
 /*
  * Main Activity class that loads {@link MainFragment}.
@@ -244,7 +242,7 @@ public class MainActivity extends Activity {
                         Toast.makeText(this, "cannot setIsPIN(true) - service not bound", Toast.LENGTH_SHORT).show();
                     }
                     isPIN = true;
-                    textViewStatus.setText("PIN OK");
+                    textViewStatus.setText(getString(R.string.TextOkPIN));
                     textViewStatus.setTextColor(getResources().getColor(color.white));
                     textViewBitte.setTextColor(getResources().getColor(color.white));
                     MainActivity.super.moveTaskToBack(true);
@@ -253,7 +251,7 @@ public class MainActivity extends Activity {
                 else
                 {
                     Log.d(TAG, "onKeyUp() - PIN IS WRONG!!!");
-                    textViewStatus.setText("FALSCHE PIN !");
+                    textViewStatus.setText(getString(R.string.TextWrongPIN));
                     textViewStatus.setTextColor(getResources().getColor(android.R.color.holo_red_light));
                     textViewBitte.setTextColor(getResources().getColor(android.R.color.holo_red_light));
                     imageViewPin1.setImageDrawable(getDrawable(R.drawable.pin_empty));
@@ -267,7 +265,7 @@ public class MainActivity extends Activity {
                 Log.d(TAG, "onKeyUp() - " + counter + ". digit is wrong");
                 isDigit = false;
                 Log.d(TAG, "onKeyUp() - PIN IS WRONG!!!");
-                textViewStatus.setText("FALSCHE PIN !");
+                textViewStatus.setText(getString(R.string.TextWrongPIN));
                 textViewStatus.setTextColor(getResources().getColor(android.R.color.holo_red_light));
                 textViewBitte.setTextColor(getResources().getColor(android.R.color.holo_red_light));
                 imageViewPin1.setImageDrawable(getDrawable(R.drawable.pin_empty));

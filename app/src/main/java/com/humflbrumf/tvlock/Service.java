@@ -1,4 +1,4 @@
-package de.humflbrumf.tvlock;
+package com.humflbrumf.tvlock;
 
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;

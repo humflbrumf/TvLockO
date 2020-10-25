@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_weight="1"
-        android:text="Bitte PIN eingeben:"
+        android:text="@string/TextEnterPIN"
         android:textAlignment="center"
         android:textSize="24sp" />
 
@@ -27,7 +27,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_gravity="bottom|center_horizontal"
-            android:contentDescription="pin1 password icon"
+            android:contentDescription="@string/ImageViewDescriptionPIN"
             android:src="@drawable/pin_empty" />
 
         <ImageView
@@ -35,7 +35,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_gravity="bottom|center_horizontal"
-            android:contentDescription="pin2 password icon"
+            android:contentDescription="@string/ImageViewDescriptionPIN"
             android:src="@drawable/pin_empty" />
 
         <ImageView
@@ -43,7 +43,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_gravity="bottom|center_horizontal"
-            android:contentDescription="pin3 password icon"
+            android:contentDescription="@string/ImageViewDescriptionPIN"
             android:src="@drawable/pin_empty" />
 
         <ImageView
@@ -51,7 +51,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_gravity="bottom|center_horizontal"
-            android:contentDescription="pin4 password icon"
+            android:contentDescription="@string/ImageViewDescriptionPIN"
             android:src="@drawable/pin_empty" />
 
     </LinearLayout>

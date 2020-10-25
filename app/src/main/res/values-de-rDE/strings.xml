@@ -1,7 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">TvLock</string>
-    <string name="TextEnterPIN">Please enter pin:</string>
-    <string name="TextWrongPIN">Wrong PIN!</string>
+    <string name="TextEnterPIN">Bitte PIN eingeben:</string>
+    <string name="TextWrongPIN">Falsche PIN!</string>
     <string name="TextOkPIN">PIN OK</string>
     <string name="ImageViewDescriptionPIN">pin</string>
 </resources>

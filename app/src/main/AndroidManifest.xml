@@ -21,7 +21,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.tvlock">
         <activity
-            android:name="de.humflbrumf.tvlock.MainActivity"
+            android:name=".MainActivity"
             android:banner="@drawable/myapp_icon_foreground"
             android:icon="@drawable/myapp_icon_foreground"
             android:label="@string/app_name"
@@ -34,7 +34,7 @@
             </intent-filter>
         </activity>
         <receiver
-            android:name="de.humflbrumf.tvlock.Receiver"
+            android:name=".Receiver"
             android:label="TvLockBroadcastReceiver"
             android:enabled="true"
             android:exported="true">
@@ -45,7 +45,7 @@
             </intent-filter>
         </receiver>
         <service
-            android:name="de.humflbrumf.tvlock.Service"
+            android:name=".Service"
             android:label="SVC-Kindersicherung">
         </service>
     </application>
